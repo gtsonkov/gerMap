@@ -9,7 +9,7 @@
       <img src="Deutchland.png" />
       <table>
         <tr>
-          <td>Площ</td>
+          <td>Fläche</td>
           <td></td>
           <td>357.588 km².</td>
         </tr>

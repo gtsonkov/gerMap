@@ -5,7 +5,7 @@
   </head>
   <body>
     <div align="center">
-      <h1>Geutschland</h1>
+      <h1>Deutschland</h1>
       <img src="Deutchland.png" />
       <table>
         <tr>

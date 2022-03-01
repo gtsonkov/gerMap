@@ -36,7 +36,7 @@
       $cities = $query->fetchAll();
 
       if (empty($cities)) {
-         echo "<tr><td>Няма данни.</td></tr>\n";
+         echo "<tr><td>No Data</td></tr>\n";
       } else {
          foreach ($cities as $city) {
             print "<tr><td>{$city['city_name']}</td><td align=\"right\">{$city['population']}</td></tr>\n";
@@ -45,7 +45,7 @@
    }
    catch (PDOException $e) {
       print "<tr><td><div align='center'>\n";
-      print "Keine Verbindung mit Datenbanl. <a href=\"#\" onclick=\"document.getElementById('error').style = 'display: block;';\">Details</a><br/>\n";
+      print "Keine Verbindung zum Datenbank. <a href=\"#\" onclick=\"document.getElementById('error').style = 'display: block;';\">Details</a><br/>\n";
       print "<span id='error' style='display: none;'><small><i>".$e->getMessage()." <a href=\"#\" onclick=\"document.getElementById('error').style = 'display: none;';\">Hide</a></i></small></span>\n";
       print "</div></td></tr>\n";
    }

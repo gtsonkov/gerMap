@@ -1,0 +1,18 @@
+set names 'utf8';
+create database deutschland character set utf8 collate utf8_general_ci;
+grant all on deutschland.* to 'web_user'@'%' identified by 'Password1';
+use deutschland;
+create table cities (id int primary key auto_increment, city_name varchar(50), population int);
+INSERT INTO cities (city_name, population) VALUES ('Berlin', 3644826);
+INSERT INTO cities (city_name, population) VALUES ('Hamburg', 1841179);
+INSERT INTO cities (city_name, population) VALUES ('München', 1471508);
+INSERT INTO cities (city_name, population) VALUES ('Köln', 1085664);
+INSERT INTO cities (city_name, population) VALUES ('Frankfurt am Main', 753056);
+INSERT INTO cities (city_name, population) VALUES ('Stuttgart', 635911);
+INSERT INTO cities (city_name, population) VALUES ('Düsseldorf', 619294);
+INSERT INTO cities (city_name, population) VALUES ('Leipzig', 587857);
+INSERT INTO cities (city_name, population) VALUES ('Dortmund', 587010);
+INSERT INTO cities (city_name, population) VALUES ('Essen', 583109);
+INSERT INTO cities (city_name, population) VALUES ('Bremen', 569352);
+INSERT INTO cities (city_name, population) VALUES ('Hannover', 538068);
+INSERT INTO cities (city_name, population) VALUES ('Nürnberg', 518365);

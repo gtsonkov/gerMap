@@ -7,7 +7,7 @@ services:
         ports:
             - 8080:80
         volumes:
-            - "/home/vagrant/gerApp/web:/var/www/html:ro"
+            - "/home/vagrant/gerMap/web:/var/www/html:ro"
         networks:
             - app-network
         depends_on:
